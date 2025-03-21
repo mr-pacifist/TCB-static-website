@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="../dist/output.css" rel="stylesheet">
+</head>
+<body>
+    <h1>hello</h1>
+    <a href="./index.html">Home</a>
+
+     <!-- home banner -->
+     <style>
+        /* Smooth fade effect */
+        .fade {
+            animation: fadeEffect 3s ease-in-out infinite;
+        }
+        @keyframes fadeEffect {
+           
+        }
+    </style>
+    <!-- Hero Section -->
+    <section class="relative w-full h-screen overflow-hidden">
+        
+        <!-- Background Slider -->
+        <div class="absolute inset-0">
+            <div id="slider-container" class="absolute inset-0 w-full h-full">
+                <img src="https://images.pexels.com/photos/3855962/pexels-photo-3855962.jpeg?auto=compress&cs=tinysrgb&w=600" class="absolute inset-0 w-full h-full object-cover opacity-0 fade" />
+                <img src="https://images.pexels.com/photos/236722/pexels-photo-236722.jpeg?auto=compress&cs=tinysrgb&w=600" class="absolute inset-0 w-full h-full object-cover opacity-0 fade" />
+                <img src="https://images.pexels.com/photos/5411674/pexels-photo-5411674.jpeg?auto=compress&cs=tinysrgb&w=600" class="absolute inset-0 w-full h-full object-cover opacity-0 fade" />
+            </div>
+        </div>
+
+        <!-- Content -->
+        <div class="relative z-10 flex flex-col items-center justify-center h-full text-white text-center px-4">
+            <h1 class="text-3xl md:text-5xl font-bold uppercase">Empowering Energy Solutions for a Sustainable Future</h1>
+            <p class="mt-4 text-lg md:text-xl max-w-2xl">
+                At TCB Global, we specialize in innovative fuel and energy solutions that drive progress.
+            </p>
+            <div class="mt-6 flex space-x-4">
+                <button class="bg-lime-400 text-black px-6 py-2 rounded-md font-semibold">Call now</button>
+                <button class="bg-blue-600 text-white px-6 py-2 rounded-md font-semibold">Inquire</button>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- JavaScript for Infinite Background Slider -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let slides = document.querySelectorAll("#slider-container img");
+            let index = 0;
+
+            function showSlide() {
+                slides.forEach(slide => slide.classList.remove("opacity-100"));
+                slides[index].classList.add("opacity-100");
+
+                index = (index + 1) % slides.length;
+            }
+
+            // Run slider every 4 seconds
+            setInterval(showSlide, 4000);
+        });
+    </script>
+</body>
+</html>
