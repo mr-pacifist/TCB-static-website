@@ -3,65 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>TCB-Global-about</title>
     <link href="../dist/output.css" rel="stylesheet">
-</head>
-<body>
-    <h1>hello</h1>
-    <a href="./index.html">Home</a>
 
-     <!-- home banner -->
-     <style>
-        /* Smooth fade effect */
-        .fade {
-            animation: fadeEffect 3s ease-in-out infinite;
-        }
-        @keyframes fadeEffect {
-           
+    <style>
+        .activeLink {
+            text-decoration: underline;
+            color: #1E40AF;
         }
     </style>
-    <!-- Hero Section -->
-    <section class="relative w-full h-screen overflow-hidden">
-        
-        <!-- Background Slider -->
-        <div class="absolute inset-0">
-            <div id="slider-container" class="absolute inset-0 w-full h-full">
-                <img src="https://images.pexels.com/photos/3855962/pexels-photo-3855962.jpeg?auto=compress&cs=tinysrgb&w=600" class="absolute inset-0 w-full h-full object-cover opacity-0 fade" />
-                <img src="https://images.pexels.com/photos/236722/pexels-photo-236722.jpeg?auto=compress&cs=tinysrgb&w=600" class="absolute inset-0 w-full h-full object-cover opacity-0 fade" />
-                <img src="https://images.pexels.com/photos/5411674/pexels-photo-5411674.jpeg?auto=compress&cs=tinysrgb&w=600" class="absolute inset-0 w-full h-full object-cover opacity-0 fade" />
-            </div>
+</head>
+<body class="bg-black">
+    
+      <!-- Navbar -->
+      <nav class="bg-lime-500 py-4">
+        <div class="container mx-auto px-3 lg:px-16 flex justify-between items-center">
+            
+            <!-- Logo -->
+            <a href="#" class="text-white font-bold text-xl flex items-center">
+                <img class="w-10 h-10 mr-2" src="../images/logo.png" alt="logo"> <!-- Placeholder for logo -->
+                <span class="font-ethnocentric text-base font-medium text-black">GLOBAL</span>
+            </a>
+    
+            <!-- Desktop Menu -->
+            <ul class="hidden md:flex items-center space-x-5 text-black font-medium">
+                <li><a href="./index.html" class=" hover:underline hover:text-blue-800" aria-current="page">Home</a></li>
+                <li><a href="#" class=" activeLink">About us</a></li>
+                <li><a href="#" class="hover:underline hover:text-blue-800 ">Products</a></li>
+                <li><a href="#" class="hover:underline hover:text-blue-800 ">Contact</a></li>
+                <!-- Inquire Button -->
+                <a href="#" class="hidden md:block bg-blue-800 text-white px-4 py-2 rounded-md hover:bg-blue-700">
+                    Inquire
+                </a>
+            </ul>
+    
+            <!-- Hamburger Menu Button -->
+            <button id="menu-btn" class="md:hidden text-black focus:outline-none">
+                <!-- Menu Icon (Bars) -->
+                <svg id="menu-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            
+                <!-- Close Icon (X) -->
+                <svg id="close-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 1024 1024" version="1.1"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path d="M602.512147 511.99738l402.747939-402.747939a63.999673 63.999673 0 0 0-90.509537-90.509537L512.00261 421.487843 109.254671 18.749904a63.999673 63.999673 0 0 0-90.509537 90.509537L421.493073 511.99738 18.755134 914.745319a63.999673 63.999673 0 0 0 90.509537 90.509537L512.00261 602.506917l402.747939 402.747939a63.999673 63.999673 0 0 0 90.509537-90.509537z"/>
+                </svg>
+            </button>
         </div>
+    
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobile-menu" class="hidden h-screen bg-lime-500 text-black font-medium px-8 py-5 md:hidden">
+            <ul class="space-y-4">
+                <li><a href="#" class="block hover:text-blue-800 hover:underline" >Home</a></li>
+                <li><a href="#" class="block hover:text-blue-800 hover:underline activeLink">About us</a></li>
+                <li><a href="#" class="block hover:text-blue-800 hover:underline">Products</a></li>
+                <li><a href="#" class="block hover:text-blue-800 hover:underline">Contact</a></li>
+                <li>
+                    <a href="#" class="inline-block mt-4 bg-blue-800 text-white px-4 py-2 rounded-md text-center hover:bg-blue-700">
+                        Inquire
+                    </a>
+                </li>
+            </ul>
+        </div>
+        </nav>
 
-        <!-- Content -->
-        <div class="relative z-10 flex flex-col items-center justify-center h-full text-white text-center px-4">
-            <h1 class="text-3xl md:text-5xl font-bold uppercase">Empowering Energy Solutions for a Sustainable Future</h1>
-            <p class="mt-4 text-lg md:text-xl max-w-2xl">
-                At TCB Global, we specialize in innovative fuel and energy solutions that drive progress.
+
+    <!-- Footer section -->
+    <footer class= " container mx-auto px-3 md:px-16 bg-gray-900 text-gray-300 py-10 ">
+        <div class=" mx-auto grid grid-cols-1 md:grid-cols-2 gap-2 pt-4 border-t border-gray-700">
+          <div class="max-w-md">
+            <div class="flex items-center gap-2 mb-4">
+              <img src="../images/logo-white.png" alt="TCB Global Logo" class="h-8" />
+              <span class="text-white text-sm font-ethnocentric">GLOBAL</span>
+            </div>
+            <p class="text-sm lg:text-base leading-relaxed">
+              At TCB Global, we specialize in innovative fuel and energy solutions that drive progress.
+              Our commitment to sustainability and efficiency sets us apart in the oil production and transportation industry.
             </p>
-            <div class="mt-6 flex space-x-4">
-                <button class="bg-lime-400 text-black px-6 py-2 rounded-md font-semibold">Call now</button>
-                <button class="bg-blue-600 text-white px-6 py-2 rounded-md font-semibold">Inquire</button>
-            </div>
+          </div>
+          <!-- footer menu and social media -->
+          <div class="grid grid-cols-2 mt-6 md:mt-0">
+            <div class=" md:mt-0">
+                <h3 class="text-white font-semibold mb-3">Links</h3>
+                <ul class="space-y-2">
+                  <li><a href="#" class="hover:text-white text-gray-400">Home</a></li>
+                  <li><a href="#" class="hover:text-white text-gray-400">About Us</a></li>
+                  <li><a href="#" class="hover:text-white text-gray-400">Product</a></li>
+                  <li><a href="#" class="hover:text-white text-gray-400">Contact</a></li>
+                </ul>
+              </div>
+      
+              <div class="">
+                <h3 class="text-white font-semibold mb-3">Follow Us</h3>
+                <div class="">
+                  <a href="#" class="hover:text-gray-400 flex items-center space-x-2 ">
+                    <img src="../images/linkedin-icon.png" alt="linkedin" class="" />
+                    <span>LinkedIn</span>
+                  </a>
+                </div>
+              </div>
+          </div>
+    
+          
         </div>
+        <!-- copyright area -->
+        <div class="mt-10 border-t border-gray-700 pt-6 flex flex-col md:flex-row justify-between text-sm">
+          <p>&copy; <span id="year"></span> TCB Global. All rights reserved.</p>
+          <div class="flex space-x-4 mt-2 md:mt-0">
+            <a href="#" class="hover:text-gray-400 underline">Privacy Policy</a>
+            <a href="#" class="hover:text-gray-400 underline" >Terms of Sales</a>
+          </div>
+        </div>
+        <script>
+            document.getElementById('year').textContent = new Date().getFullYear();
+        </script>
+      </footer>
+    
+    <script src="../js/index.js"></script> 
 
-    </section>
-
-    <!-- JavaScript for Infinite Background Slider -->
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            let slides = document.querySelectorAll("#slider-container img");
-            let index = 0;
-
-            function showSlide() {
-                slides.forEach(slide => slide.classList.remove("opacity-100"));
-                slides[index].classList.add("opacity-100");
-
-                index = (index + 1) % slides.length;
-            }
-
-            // Run slider every 4 seconds
-            setInterval(showSlide, 4000);
-        });
-    </script>
 </body>
 </html>
