@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
         bars.forEach(bar => bar.style.width = "0%");
 
         slides[index].classList.add("active");
-        indicators[index].classList.replace("text-white", "text-lime-500");
+        indicators[index].classList.replace("text-gray-300", "text-lime-500");
         bars[index].style.width = "100%";
 
         index = (index + 1) % slides.length;
