@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: Ethnocentric;
+    src: url("../fonts/Ethnocentric Rg.otf");
+}
+
+/* Hide scrollbar */
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+.no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+/* Smooth scroll effect */
+.scroll-container {
+    scroll-behavior: smooth;
+}
+
+/* Smooth fade effect */
+.fade {
+    transition: opacity 2s ease-in-out;
+    opacity: 0;
+}
+.active {
+    opacity: 1;
+}
+/* Progress bar animation */
+.progress-bar {
+    height: 4px;
+    width: 0%;
+    background-color: limegreen;
+    transition: width 1.5s linear;
+}
