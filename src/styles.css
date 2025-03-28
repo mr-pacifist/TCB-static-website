@@ -35,3 +35,7 @@
     background-color: limegreen;
     transition: width 1.5s linear;
 }
+.container{
+    width: 100%;
+    max-width: 1440px;
+}
