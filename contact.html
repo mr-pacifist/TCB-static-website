@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./images/logo-white.png">
+    <title>TCB Global Contact</title>
+    <link href="./dist/output.css" rel="stylesheet">
+    
+</head>
+<body class="bg-black">
+    <!-- nav bar -->
+    <nav class="bg-lime-500 py-4">
+        <div class="container mx-auto px-3 lg:px-16 flex justify-between items-center">
+            
+            <!-- Logo -->
+            <a href="#" class="text-white font-bold text-xl flex items-center">
+                <img class="w-10 h-10 mr-2" src="./images/logo.png" alt="logo"> <!-- Placeholder for logo -->
+                <span class="font-ethnocentric text-sm font-medium text-black">GLOBAL</span>
+            </a>
+    
+            <!-- Desktop Menu -->
+            <ul class="hidden md:flex items-center space-x-5 text-black font-medium">
+                <li><a href="./index.html" class=" hover:underline hover:text-blue-800" aria-current="page">Home</a></li>
+                <li><a href="./about.html" class="hover:underline hover:text-blue-800 ">About us</a></li>
+                <li><a href="./product.html" class=" hover:underline hover:text-blue-800">Products</a></li>
+                <li><a href="#" class="activeLink ">Contact</a></li>
+                <!-- Inquire Button -->
+                <a href="mailto:info@tcb.global" class="bg-blue-800 text-white px-4 py-1 md:px-6 md:py-2 rounded-lg text-sm md:text-base hover:bg-blue-700 border border-white">
+                    Inquire</a>
+            </ul>
+    
+            <!-- Hamburger Menu Button -->
+            <button id="menu-btn" class="md:hidden text-black focus:outline-none">
+                <!-- Menu Icon (Bars) -->
+                <svg id="menu-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            
+                <!-- Close Icon (X) -->
+                <svg id="close-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 1024 1024" version="1.1"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path d="M602.512147 511.99738l402.747939-402.747939a63.999673 63.999673 0 0 0-90.509537-90.509537L512.00261 421.487843 109.254671 18.749904a63.999673 63.999673 0 0 0-90.509537 90.509537L421.493073 511.99738 18.755134 914.745319a63.999673 63.999673 0 0 0 90.509537 90.509537L512.00261 602.506917l402.747939 402.747939a63.999673 63.999673 0 0 0 90.509537-90.509537z"/>
+                </svg>
+            </button>
+        </div>
+    
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobile-menu" class="hidden h-screen bg-lime-500 text-black font-medium px-8 py-5 md:hidden ">
+            <ul class="space-y-4 ">
+                <li><a href="./index.html" class="block hover:text-blue-800 hover:underline " >Home</a></li>
+                <li><a href="./about.html" class="block hover:text-blue-800 hover:underline">About us</a></li>
+                <li><a href="./product.html" class="activeLink">Products</a></li>
+                <li><a href="./contact.html" class="block hover:text-blue-800 hover:underline">Contact</a></li>
+                <li>
+                  <a href="mailto:info@tcb.global" class="bg-blue-800 text-white px-4 py-1 rounded-lg text-sm md:text-base hover:bg-blue-700 border border-white">
+                    Inquire</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Hero Section -->
+    <section class="container mx-auto px-3 md:px-16 relative w-full h-screen max-h-[640px] flex items-center md:items-end  bg-cover bg-center" style="background-image: url('./images/contact-hero-bg.jpg');">
+        <div class="absolute inset-0 bg-gradient-to-t bg-black opacity-50"></div>
+        <div class="relative z-10 max-w-3xl text-white md:px-5  md:text-left md:mb-20 ">
+            <h1 class="text-xl md:text-4xl font-ethnocentric mt-2">Experience the Power of <br> Cleaner Fuel</h1>
+            <p class="text-neutral-400 mt-4">Ultra-Low Sulphur Diesel EN590 10PPM is designed to reduce emissions and enhance engine performance. Choose a cleaner, more efficient fuel solution for your operations.</p>
+            
+        </div>
+    </section>
+    
+    <!-- contact -->
+    <section class="container mx-auto px-3 md:px-16 py-4 md:py-8">
+        <div class="text-center">
+            <h3 class="text-lime-500 font-semibold text-lg mb-4">Connect</h3>
+            <h2 class="font-ethnocentric text-2xl md:text-4xl text-white">Get in Touch</h2>
+            <p class="text-neutral-400 text-sm md:text-base mt-2">
+                We're here to help with any inquires you have.
+            </p>
+        </div>
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 my-4 md:my-8">
+            <!-- card-1 -->
+            <div class=" text-center ">
+                <!-- icon -->
+                <svg class=" mx-auto w-12 h-12 text-lime-500" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M41.0001 30.84V36.84C41.0024 37.397 40.8883 37.9483 40.6651 38.4586C40.442 38.969 40.1147 39.4271 39.7043 39.8037C39.2938 40.1802 38.8093 40.4669 38.2816 40.6454C37.754 40.8238 37.1949 40.8901 36.6401 40.84C30.4858 40.1712 24.5741 38.0682 19.3801 34.7C14.5478 31.6293 10.4508 27.5323 7.38011 22.7C4.00007 17.4824 1.8966 11.5419 1.24011 5.35995C1.19013 4.80688 1.25586 4.24947 1.43311 3.7232C1.61036 3.19693 1.89525 2.71333 2.26964 2.30319C2.64403 1.89306 3.09972 1.56537 3.60769 1.34099C4.11566 1.11662 4.66479 1.00047 5.22011 0.99995H11.2201C12.1907 0.990397 13.1317 1.33411 13.8676 1.96702C14.6036 2.59992 15.0843 3.47884 15.2201 4.43995C15.4734 6.36008 15.943 8.2454 16.6201 10.0599C16.8892 10.7758 16.9474 11.5538 16.7879 12.3017C16.6284 13.0496 16.2578 13.7362 15.7201 14.28L13.1801 16.8199C16.0272 21.827 20.173 25.9728 25.1801 28.82L27.7201 26.28C28.2639 25.7422 28.9504 25.3716 29.6983 25.2121C30.4463 25.0526 31.2243 25.1109 31.9401 25.3799C33.7547 26.0571 35.64 26.5267 37.5601 26.78C38.5316 26.917 39.4189 27.4064 40.0532 28.1549C40.6874 28.9035 41.0244 29.8591 41.0001 30.84Z" stroke="#84CC16" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <h3 class="text-white text-xl md:text-3xl font-bold my-4 md:my-6">Phone</h3>
+                <p class="text-neutral-400 text-sm md:text-base">Call us for immediate assistance</p>
+                <a href="tel:+0018882938990" class="text-neutral-400 text-sm md:text-base underline hover:text-neutral-300">
+                    +0018882938990
+                </a>
+            </div>
+            <!-- card-2 -->
+            <div class=" text-center ">
+                <!-- icon -->
+                <svg class="mx-auto w-12 h-12 text-lime-500" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M40 8H8C5.79086 8 4 9.79086 4 12V36C4 38.2091 5.79086 40 8 40H40C42.2091 40 44 38.2091 44 36V12C44 9.79086 42.2091 8 40 8Z" stroke="#84CC16" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M44 14L26.06 25.4C25.4425 25.7869 24.7286 25.992 24 25.992C23.2714 25.992 22.5575 25.7869 21.94 25.4L4 14" stroke="#84CC16" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                        
+                <h3 class="text-white text-xl md:text-3xl font-bold my-4 md:my-6">Info</h3>
+                <p class="text-neutral-400 text-sm md:text-base">Reach us anytime for inquire.</p>
+                <a href="mailto:info@tcb.global" class="text-neutral-400 text-sm md:text-base underline hover:text-neutral-300">
+                    info@tcb.global
+                </a>
+            </div>
+            <!-- card-3 -->
+            <div class=" text-center ">
+                <!-- icon -->
+                <svg class="mx-auto w-12 h-12 text-lime-500" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M40 8H8C5.79086 8 4 9.79086 4 12V36C4 38.2091 5.79086 40 8 40H40C42.2091 40 44 38.2091 44 36V12C44 9.79086 42.2091 8 40 8Z" stroke="#84CC16" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M44 14L26.06 25.4C25.4425 25.7869 24.7286 25.992 24 25.992C23.2714 25.992 22.5575 25.7869 21.94 25.4L4 14" stroke="#84CC16" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                        
+                <h3 class="text-white text-xl md:text-3xl font-bold my-4 md:my-6">Sales</h3>
+                <p class="text-neutral-400 text-sm md:text-base">Reach us anytime for order</p>
+                <a href="mailto:sales@tcb.global" class="text-neutral-400 text-sm md:text-base underline hover:text-neutral-300">
+                    sales@tcb.global
+                </a>
+            </div>
+            <!-- card-4 -->
+            <div class=" text-center ">
+                <!-- icon -->
+                <svg class="mx-auto w-12 h-12 text-lime-500" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M40 8H8C5.79086 8 4 9.79086 4 12V36C4 38.2091 5.79086 40 8 40H40C42.2091 40 44 38.2091 44 36V12C44 9.79086 42.2091 8 40 8Z" stroke="#84CC16" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M44 14L26.06 25.4C25.4425 25.7869 24.7286 25.992 24 25.992C23.2714 25.992 22.5575 25.7869 21.94 25.4L4 14" stroke="#84CC16" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                        
+                <h3 class="text-white text-xl md:text-3xl font-bold my-4 md:my-6">Accounts</h3>
+                <p class="text-neutral-400 text-sm md:text-base">Reach us anytime for account info </p>
+                <a href="mailto:accounts@tcb.global" class="text-neutral-400 text-sm md:text-base underline hover:text-neutral-300">
+                    accounts@tcb.global 
+                </a>
+            </div>
+
+         </div>
+    </section>
+
+    <!-- TCB Headquarter location -->
+
+    <div class="container mx-auto px-3 md:px-16 py-10">
+        <h2 class="text-center text-3xl font-ethnocentric text-white mb-2">LOCATIONS</h2>
+        <p class="text-center text-gray-400 mb-6">Explore our locations across the globe.</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="flex items-center ">
+                <div class="flex flex-col gap-1 md:gap-3 ">
+                    <svg class="w-12  text-lime-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 2.25c-3.9 0-7.125 3.2-7.125 7.125 0 4.654 7.125 11.625 7.125 11.625s7.125-6.971 7.125-11.625C19.125 5.45 15.9 2.25 12 2.25z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 11.25a2.25 2.25 0 100-4.5 2.25 2.25 0 000 4.5z" />
+                    </svg>
+                    <h3 class=" text-white text-xl md:text-3xl font-bold">Headquarter</h3>
+                    <p class="mt-2 text-gray-400">Registration number <span class="text-lime-500 font-semibold">CR-356697</span></p>
+                    <p class="mt-1 text-gray-400 underline">PO Box 2775 - Artemis House - 67 Fort Street - Grand Cayman - KY1-1111</p>
+                </div>
+            </div>
+            <div class="rounded-xl overflow-hidden">
+                <img src="./images/maps.jpg" class="w-full h-full object-cover">
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class= " container mx-auto px-3 md:px-16 bg-gray-900 text-gray-300 py-10 ">
+        <div class=" mx-auto grid grid-cols-1 md:grid-cols-2 gap-2 pt-4 border-t border-gray-700">
+          <div class="max-w-md">
+            <div class="flex items-center gap-2 mb-4">
+              <img src="./images/logo-white.png" alt="TCB Global Logo" class="w-10" />
+              <span class="text-white text-sm font-ethnocentric">GLOBAL</span>
+            </div>
+            <p class="text-sm lg:text-base leading-relaxed">
+              At TCB Global, we specialize in innovative fuel and energy solutions that drive progress.
+              Our commitment to sustainability and efficiency sets us apart in the oil production and transportation industry.
+            </p>
+          </div>
+          <!-- footer menu and social media -->
+          <div class="grid grid-cols-2 mt-6 md:mt-0">
+            <div class=" md:mt-0">
+                <h3 class="text-white font-semibold mb-3">Links</h3>
+                <ul class="space-y-2">
+                  <li><a href="./index.html" class="hover:text-white text-gray-400">Home</a></li>
+                  <li><a href="./about.html" class="hover:text-white text-gray-400">About Us</a></li>
+                  <li><a href="./product.html" class="hover:text-white text-gray-400">Product</a></li>
+                  <li><a href="./contact.html" class="hover:text-white text-gray-400">Contact</a></li>
+                </ul>
+              </div>
+      
+              <div class="">
+                <h3 class="text-white font-semibold mb-3">Follow Us</h3>
+                <div class="">
+                  <a href="#" class="hover:text-gray-400 flex items-center space-x-2 ">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93zM6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37z" />
+                      </svg>
+                    <span>LinkedIn</span>
+                  </a>
+                </div>
+              </div>
+          </div>
+  
+          
+        </div>
+        <!-- copyright area -->
+        <div class="mt-10 border-t border-gray-700 pt-6 flex flex-col md:flex-row justify-between text-sm">
+          <p>&copy; <span id="year"></span> TCB Global. All rights reserved.</p>
+          <div class="flex space-x-4 mt-2 md:mt-0">
+            <a href="#" class="hover:text-gray-400 underline">Privacy Policy</a>
+            <a href="#" class="hover:text-gray-400 underline" >Terms of Sales</a>
+          </div>
+        </div>
+        <script>
+            document.getElementById('year').textContent = new Date().getFullYear();
+        </script>
+    </footer>
+
+    <script src="./js/index.js"></script> 
+</body>
+</html>

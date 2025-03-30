@@ -39,3 +39,8 @@
     width: 100%;
     max-width: 1440px;
 }
+
+.activeLink {
+    text-decoration: underline;
+    color: #1E40AF;
+}

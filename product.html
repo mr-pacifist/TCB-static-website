@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./images/logo-white.png">
+    <title>TCB Global Product</title>
+    <link href="./dist/output.css" rel="stylesheet">
+</head>
+<body class="bg-black">
+
+    <!-- nav bar -->
+    <nav class="bg-lime-500 py-4">
+        <div class="container mx-auto px-3 lg:px-16 flex justify-between items-center">
+            
+            <!-- Logo -->
+            <a href="#" class="text-white font-bold text-xl flex items-center">
+                <img class="w-10 h-10 mr-2" src="./images/logo.png" alt="logo"> <!-- Placeholder for logo -->
+                <span class="font-ethnocentric text-sm font-medium text-black">GLOBAL</span>
+            </a>
+    
+            <!-- Desktop Menu -->
+            <ul class="hidden md:flex items-center space-x-5 text-black font-medium">
+                <li><a href="./index.html" class=" hover:underline hover:text-blue-800" aria-current="page">Home</a></li>
+                <li><a href="./about.html" class="hover:underline hover:text-blue-800 ">About us</a></li>
+                <li><a href="./product.html" class="activeLink ">Products</a></li>
+                <li><a href="./contact.html" class="hover:underline hover:text-blue-800 ">Contact</a></li>
+                <!-- Inquire Button -->
+                <a href="mailto:info@tcb.global" class="bg-blue-800 text-white px-4 py-1 md:px-6 md:py-2 rounded-lg text-sm md:text-base hover:bg-blue-700 border border-white">
+                  Inquire</a>
+            </ul>
+    
+            <!-- Hamburger Menu Button -->
+            <button id="menu-btn" class="md:hidden text-black focus:outline-none">
+                <!-- Menu Icon (Bars) -->
+                <svg id="menu-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            
+                <!-- Close Icon (X) -->
+                <svg id="close-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 1024 1024" version="1.1"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path d="M602.512147 511.99738l402.747939-402.747939a63.999673 63.999673 0 0 0-90.509537-90.509537L512.00261 421.487843 109.254671 18.749904a63.999673 63.999673 0 0 0-90.509537 90.509537L421.493073 511.99738 18.755134 914.745319a63.999673 63.999673 0 0 0 90.509537 90.509537L512.00261 602.506917l402.747939 402.747939a63.999673 63.999673 0 0 0 90.509537-90.509537z"/>
+                </svg>
+            </button>
+        </div>
+    
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobile-menu" class="hidden h-screen bg-lime-500 text-black font-medium px-8 py-5 md:hidden ">
+            <ul class="space-y-4 ">
+                <li><a href="./index.html" class="block hover:text-blue-800 hover:underline " >Home</a></li>
+                <li><a href="./about.html" class="block hover:text-blue-800 hover:underline">About us</a></li>
+                <li><a href="#" class="activeLink">Products</a></li>
+                <li><a href="./contact.html" class="block hover:text-blue-800 hover:underline">Contact</a></li>
+                <li>
+                  <a href="mailto:info@tcb.global" class="bg-blue-800 text-white px-4 py-1 rounded-lg text-sm md:text-base hover:bg-blue-700 border border-white">
+                    Inquire</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+
+    <section class="container mx-auto px-3 md:px-16 relative w-full h-screen flex items-end md:items-center bg-cover bg-center" style="background-image: url('./images/product-hero-bg.jpg');">
+      <div class="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-r from-[#161616]"></div>
+      <div class="relative z-10 max-w-3xl text-white   md:text-left  mb-10 md:mb-0">
+          <span class="text-lime-500 font-bold ">Quality</span>
+          <h1 class="text-xl md:text-4xl font-ethnocentric mt-2">Experience the Power of <br> Cleaner Fuel</h1>
+          <p class="text-white mt-4">Ultra-Low Sulphur Diesel EN590 10PPM is designed to reduce emissions and enhance engine performance. Choose a cleaner, more efficient fuel solution for your operations.</p>
+          
+          <div class="mt-6 flex flex-col md:flex-row gap-6 text-left">
+              <div>
+                  <p class="text-xl md:text-4xl font-bold text-lime-500">50%</p>
+                  <p class="text-neutral-400">Reduce emissions and enhance engine performance.</p>
+              </div>
+              <div>
+                  <p class=" text-xl md:text-4xl font-bold text-lime-500">50%</p>
+                  <p class="text-neutral-400">Cleaner fuel for a sustainable future.</p>
+              </div>
+          </div>
+      </div>
+  </section>
+
+    <!-- TCB Product image and title-->
+    <section class="container mx-auto px-3 md:px-16 py-4 md:py-8 my-8 md:my-16">
+      <div class="my-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+        <h2 class="font-ethnocentric text-xl  lg:text-3xl text-lime-500">
+          Explore Our Premium Diesel & Gasoline Products for Your Energy Needs
+        </h2>
+        <p class="text-neutral-400 font-semibold text-sm lg:text-base">At TCB Oil, we offer a comprehensive range of high-quality diesel and gasoline products. 
+          Our Ultra-Low Sulphur Diesel EN590 10PPM and Diesel Gas D2 Oil are designed to meet stringent environmental standards while ensuring optimal performance. Trust us for reliable fuel solutions that power your operations efficiently.
+
+        </p>
+      </div>
+
+      <!-- row-1 -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 my-4">
+        <!-- Card 1 -->
+        <div class=" rounded-lg overflow-hidden shadow-lg">
+            <img src="./images/Sulphur-Diesel-EN590.jpg"  class="w-full h-60 object-cover rounded-lg">
+            <div class="">
+                <h3 class="text-lg md:text-2xl font-bold text-white my-4 md:my-6">
+                  Ultra-Low Sulphur Diesel EN590 10PM
+                </h3>      
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class=" rounded-lg overflow-hidden shadow-lg">
+            <img src="./images/Dependable-Diesel-Gas.jpg"  class="w-full h-60 object-cover rounded-lg">
+            <div class="">
+                <h3 class="text-lg md:text-2xl font-bold text-white my-4 md:my-6">
+                  Dependable Diesel Gas D2 Oil for Heavy-Duty Applications
+                </h3>
+                
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class=" rounded-lg overflow-hidden shadow-lg">
+            <img src="./images/sulphar-disel.jpg"  class="w-full h-60 object-cover rounded-lg">
+            <div class="">
+                <h3 class="text-lg md:text-xl  font-bold text-white my-4 md:my-6">
+                  Ultra-Low Sulphur Diesel(ULSD)
+                </h3>
+                
+            </div>
+        </div>
+      
+    </div>
+      <!-- row-2 -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 my-4">
+        <!-- Card 1 -->
+        <div class=" rounded-lg overflow-hidden shadow-lg">
+            <img src="./images/Fuel-Oil-CST.jpg"  class="w-full h-60 object-cover rounded-lg">
+            <div class="">
+                <h3 class="text-lg md:text-2xl font-bold text-white my-4 md:my-6">
+                  Fuel Oil CST 180: Reliable and Efficient
+                </h3>      
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class=" rounded-lg overflow-hidden shadow-lg">
+            <img src="./images/Bitumen.jpg"  class="w-full h-60 object-cover rounded-lg">
+            <div class="">
+                <h3 class="text-lg md:text-2xl font-bold text-white my-4 md:my-6">
+                  Bitumen 60/70 and 80/100: Versatile Solutions
+                </h3>
+                
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class=" rounded-lg overflow-hidden shadow-lg">
+            <img src="./images/Diesel-&-gasoline.jpg"  class="w-full h-60 object-cover rounded-lg">
+            <div class="">
+                <h3 class="text-lg md:text-xl  font-bold text-white my-4 md:my-6">
+                  D6 Virgin Fuel Oil: High Purity Fuel
+                </h3>
+                
+            </div>
+        </div>
+      
+    </div>
+   </section>
+
+   <!-- premium aviation fuels -->
+   <section class="relative container mx-auto py-4 px-3 md:px-16 bg-cover bg-center h-[430px] lg:h-[420px] flex items-center "
+   style="background-image: url('./images/aeroplane.jpg');">
+   <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+   <div class="relative z-10 text-center max-w-4xl mx-auto">
+       <h2 class="text-lime-500 text-lg md:text-4xl font-ethnocentric">
+           Premium Aviation Fuels for  Optimal Performance
+       </h2>
+       <p class="text-gray-300 mt-4 text-sm md:text-lg font-medium">
+           Our aviation fuels, including Jet A1 and Aviation Kerosene Jet Fuel JP54, 
+           are designed to meet the highest industry standards. Trust us for reliable 
+           performance and safety in every flight.
+       </p>
+       <div class="mt-4 lg:mt-8 grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 text-left">
+           <div class="text-center">
+               <h3 class="text-white text-lg lg:text-2xl font-bold">Jet A1: The Industry Standard Fuel</h3>
+               <p class="text-gray-300 text-sm lg:text-base mt-2">
+                   Jet A1 is known for its excellent performance and versatility.
+               </p>
+           </div>
+           <div class="text-center">
+               <h3 class="text-white text-lg lg:text-2xl font-bold">Aviation Kerosene Jet Fuel JP54</h3>
+               <p class="text-gray-300 text-sm lg:text-base mt-2">
+                   JP54 is a high-quality fuel, perfect for commercial aviation.
+               </p>
+           </div>
+       </div>
+   </div>
+    </section>
+
+    <!-- Premium Range of Crude Oil-->
+     <section class="container mx-auto py-4 px-3 md:px-16 my-8 md:my-16">
+        <div class="my-8">
+          <h2 class="font-ethnocentric text-xl lg:text-4xl text-white text-center">Explore Our Premium Range of Crude Oil and Petroleum Products</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+          <!-- Card 1 -->
+          <div class="bg-gray-900 rounded-lg overflow-hidden shadow-lg">
+              <img src="./images/Bonny-Light-Crude.jpg" alt="Bonny Light Crude" class="w-full h-48 object-cover rounded-lg">
+              <div class="p-4">
+                  <h3 class="text-lgmd:text-xl font-bold text-white">Bonny Light Crude</h3>
+                  <p class="text-gray-400 text-sm mt-2">
+                    Experience the high quality and reliability of Bonny Light Crude for your needs.</p>
+              </div>
+          </div>
+  
+          <!-- Card 2 -->
+          <div class="bg-gray-900 rounded-lg overflow-hidden shadow-lg">
+            <img src="./images/Light-Crude-Cycle.jpg" class="w-full h-48 object-cover rounded-lg">
+            <div class="p-4">
+                <h3 class="text-lgmd:text-xl font-bold text-white">Light Crude Cycle</h3>
+                <p class="text-gray-400 text-sm mt-2">
+                  Our Light Crude Cycle offers exceptional versatility for various industrial applications.
+                </p>
+            </div>
+          </div>
+
+          <!-- Card 3-->
+          <div class="bg-gray-900 rounded-lg overflow-hidden shadow-lg">
+            <img src="./images/curd-oil.jpg" alt="Bonny Light Crude" class="w-full h-48 object-cover rounded-lg">
+            <div class="p-4">
+                <h3 class="text-lgmd:text-xl font-bold text-white">Mazut M100</h3>
+                <p class="text-gray-400 text-sm mt-2">
+                  Mazut M100 provides a cost-effective solution for heavy fuel oil requirements.
+                </p>
+            </div>
+          </div>
+          <!-- Card 3-->
+          <div class="bg-gray-900 rounded-lg overflow-hidden shadow-lg">
+            <img src="./images/Pacific-Ocean.jpg" alt="Bonny Light Crude" class="w-full h-48 object-cover rounded-lg">
+            <div class="p-4">
+                <h3 class="text-lgmd:text-xl font-bold text-white">Eastern Siberian Pacific Ocean</h3>
+                <p class="text-gray-400 text-sm mt-2">
+                  Our products sourced from the Eastern Siberian Pacific Ocean ensure top-notch quality.
+                </p>
+            </div>
+          </div>       
+      </div>
+     </section>
+
+    <!-- Petroleum Derivatives & Chemicals-->
+     <section class="container mx-auto px-3 md:px-16 my-8 md:my-16">
+        <div class="my-8">
+          <h2 class="font-ethnocentric text-xl  lg:text-4xl text-white text-center">Petroleum Derivatives & Chemicals</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:">
+          <!-- Card 1 -->
+          <div class=" rounded-lg overflow-hidden shadow-lg">
+              <img src="./images/urea-46.jpg"  class="w-full h-60 object-cover rounded-lg">
+              <div class="">
+                  <h3 class="text-lg md:text-3xl font-bold text-white my-4 md:my-6">Urea 46</h3>
+                  <p class="text-white text-sm md:text-base">
+                    High-performance petroleum products for industrial and commercial applications.</p>
+              </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class=" rounded-lg overflow-hidden shadow-lg">
+              <img src="./images/petroleum-coke.jpg"  class="w-full h-60 object-cover rounded-lg">
+              <div class="">
+                  <h3 class="text-lg md:text-3xl font-bold text-white my-4 md:my-6">Petroleum Coke</h3>
+                  <p class="text-white text-sm md:text-base">
+                    Carbon-rich byproduct for fuel, steel, and aluminum production.</p>
+              </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class=" rounded-lg overflow-hidden shadow-lg">
+              <img src="./images/Sulfur-Granular.jpg"  class="w-full h-60 object-cover rounded-lg">
+              <div class="">
+                  <h3 class="text-lg md:text-3xl font-bold text-white my-4 md:my-6">Sulfur Granular</h3>
+                  <p class="text-white text-sm md:text-base">
+                    Used in fuel production, lubrication, and petrochemical refining processes.</p>
+              </div>
+          </div>
+  
+                
+      </div>
+     </section>
+
+     <!-- Gas products-->
+   <section class="relative container mx-auto py-4 px-3 md:px-16 bg-cover bg-center h-[430px] lg:h-[420px] flex items-end md:items-center "
+   style="background-image: url('./images/gasproduct-bg.jpg');">
+   <div class="absolute inset-0 bg-black bg-opacity-30"></div>
+   <div class="relative z-10 text-center max-w-4xl mx-auto text-white ">
+       <h2 class=" text-lg md:text-4xl font-ethnocentric text-lime-500">
+        Gas Products
+       </h2>
+       <p class=" mt-4 text-sm md:text-lg font-medium">
+        Essential fuels for energy, heating, industrial, and transportation applications.
+       </p>
+       <div class="mt-4 lg:mt-8 grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 text-left">
+           <div class="text-center">
+               <h3 class="text-lg lg:text-2xl font-bold">Liquified Petroleum</h3>
+               <p class=" text-sm lg:text-base mt-2">
+                Versatile fuel used for heating, cooking, and industry.
+               </p>
+           </div>
+           <div class="text-center">
+               <h3 class="text-lg lg:text-2xl font-bold">Liquified Natural Gas (LNG)</h3>
+               <p class="text-sm lg:text-base mt-2">
+                Clean energy source for power, transport, and industry.
+               </p>
+           </div>
+       </div>
+   </div>
+    </section>
+    
+
+    <!-- get in touch section -->
+    <div class="container mx-auto relative h-[186px] md:h-[389px] flex items-center justify-center text-center text-white">
+        <!-- Background Image -->
+        <div class="absolute inset-0 bg-[url('../images/get-in-touch-bg.jpeg')] bg-cover bg-center "></div>
+  
+        <div class="relative z-10 max-w-2xl mx-auto px-4">
+            <h2 class=" font-ethnocentric text-xl md:text-3xl  text-lime-500 ">Get in Touch With Us</h2>
+            <p class="mt-2 text-sm md:text-base">Discover how our energy solutions can empower your business. Contact us for more information.</p>
+  
+            <div class="mt-4 flex justify-center gap-4">
+                <a href="tel:+0018882938990" class="bg-lime-500 hover:bg-lime-500 text-black font-semibold px-4 py-1 md:px-6 md:py-2 rounded-lg text-sm sm:text-base">
+                    Call now
+                </a>
+                <a href="mailto:info@tcb.global" class="bg-blue-800 text-white px-4 py-1 md:px-6 md:py-2 rounded-lg text-sm md:text-base hover:bg-blue-700 border border-white">
+                  Inquire</a>
+            </div>
+        </div>
+      </div>
+
+      <!-- Footer section -->
+      <footer class= " container mx-auto px-3 md:px-16 bg-gray-900 text-gray-300 py-10 ">
+        <div class=" mx-auto grid grid-cols-1 md:grid-cols-2 gap-2 pt-4 border-t border-gray-700">
+          <div class="max-w-md">
+            <div class="flex items-center gap-2 mb-4">
+              <img src="./images/logo-white.png" alt="TCB Global Logo" class="w-10" />
+              <span class="text-white text-sm font-ethnocentric">GLOBAL</span>
+            </div>
+            <p class="text-sm lg:text-base leading-relaxed">
+              At TCB Global, we specialize in innovative fuel and energy solutions that drive progress.
+              Our commitment to sustainability and efficiency sets us apart in the oil production and transportation industry.
+            </p>
+          </div>
+          <!-- footer menu and social media -->
+          <div class="grid grid-cols-2 mt-6 md:mt-0">
+            <div class=" md:mt-0">
+                <h3 class="text-white font-semibold mb-3">Links</h3>
+                <ul class="space-y-2">
+                  <li><a href="./index.html" class="hover:text-white text-gray-400">Home</a></li>
+                  <li><a href="./about.html" class="hover:text-white text-gray-400">About Us</a></li>
+                  <li><a href="./product.html" class="hover:text-white text-gray-400">Product</a></li>
+                  <li><a href="./contact.html" class="hover:text-white text-gray-400">Contact</a></li>
+                </ul>
+              </div>
+      
+              <div class="">
+                <h3 class="text-white font-semibold mb-3">Follow Us</h3>
+                <div class="">
+                  <a href="#" class="hover:text-gray-400 flex items-center space-x-2 ">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93zM6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37z" />
+                      </svg>
+                    <span>LinkedIn</span>
+                  </a>
+                </div>
+              </div>
+          </div>
+  
+          
+        </div>
+        <!-- copyright area -->
+        <div class="mt-10 border-t border-gray-700 pt-6 flex flex-col md:flex-row justify-between text-sm">
+          <p>&copy; <span id="year"></span> TCB Global. All rights reserved.</p>
+          <div class="flex space-x-4 mt-2 md:mt-0">
+            <a href="#" class="hover:text-gray-400 underline">Privacy Policy</a>
+            <a href="#" class="hover:text-gray-400 underline" >Terms of Sales</a>
+          </div>
+        </div>
+        <script>
+            document.getElementById('year').textContent = new Date().getFullYear();
+        </script>
+    </footer>
+    
+
+    <script src="./js/index.js"></script> 
+</body>
+</html>
