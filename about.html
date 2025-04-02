@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./images/logo-white.png">
+    <title>TCB Global About</title>
+    <link href="./dist/output.css" rel="stylesheet">
+</head>
+<body class="bg-black">
+    
+      <!-- Navbar -->
+      <nav class="bg-lime-500 py-4">
+        <div class="container mx-auto px-3 lg:px-16 flex justify-between items-center">
+            
+            <!-- Logo -->
+            <a href="./index.html" class="text-white font-bold text-xl flex items-center cursor-pointer">
+                <img class="w-10 h-10 mr-2" src="./images/logo.png" alt="logo"> <!-- Placeholder for logo -->
+                <span class="font-ethnocentric text-sm font-medium text-black">GLOBAL</span>
+            </a>
+    
+            <!-- Desktop Menu -->
+            <ul class="hidden md:flex items-center space-x-5 text-black font-medium">
+                <li><a href="./index.html" class=" hover:underline hover:text-blue-800" aria-current="page">Home</a></li>
+                <li><a href="#" class=" activeLink">About us</a></li>
+                <li><a href="./product.html" class="hover:underline hover:text-blue-800 ">Products</a></li>
+                <li><a href="./contact.html" class="hover:underline hover:text-blue-800 ">Contact</a></li>
+                <!-- Inquire Button -->
+                <a href="mailto:info@tcb.global" class="bg-blue-800 text-white px-4 py-1 md:px-6 md:py-2 rounded-lg text-sm md:text-base hover:bg-blue-700 border border-white">
+                  Inquire</a>
+            </ul>
+    
+            <!-- Hamburger Menu Button -->
+            <button id="menu-btn" class="md:hidden text-black focus:outline-none">
+                <!-- Menu Icon (Bars) -->
+                <svg id="menu-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            
+                <!-- Close Icon (X) -->
+                <svg id="close-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 1024 1024" version="1.1"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path d="M602.512147 511.99738l402.747939-402.747939a63.999673 63.999673 0 0 0-90.509537-90.509537L512.00261 421.487843 109.254671 18.749904a63.999673 63.999673 0 0 0-90.509537 90.509537L421.493073 511.99738 18.755134 914.745319a63.999673 63.999673 0 0 0 90.509537 90.509537L512.00261 602.506917l402.747939 402.747939a63.999673 63.999673 0 0 0 90.509537-90.509537z"/>
+                </svg>
+            </button>
+        </div>
+    
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobile-menu" class="hidden h-screen bg-lime-500 text-black font-medium px-8 py-5 md:hidden">
+            <ul class="space-y-4">
+                <li><a href="./index.html" class="block hover:text-blue-800 hover:underline" >Home</a></li>
+                <li><a href="./about.html" class="block  activeLink">About us</a></li>
+                <li><a href="./product.html" class="block hover:text-blue-800 hover:underline">Products</a></li>
+                <li><a href="./contact.html" class="block hover:text-blue-800 hover:underline">Contact</a></li>
+                <li>
+                  <a href="mailto:info@tcb.global" class="bg-blue-800 text-white px-4 py-1 rounded-lg text-sm md:text-base hover:bg-blue-700 border border-white">
+                    Inquire</a>
+                </li>
+            </ul>
+        </div>
+      </nav>
+
+    <!-- Hero Section -->
+    <section  class="container mx-auto px-3 md:px-16 relative w-full h-[200px] sm:h-[300px] md:h-[430px] lg:h-[640px] flex items-center justify-center " >
+      <div class="absolute inset-0 bg-black bg-opacity-30">
+        <img
+          src="./images/about-hero-bg.jpg"
+          class="w-full h-full object-cover"
+          alt=""
+        />
+        
+      </div>
+      <div class="text-center z-10 ">
+          <h1 class="text-base md:text-2xl lg:text-4xl text-white font-ethnocentric leading-tight">
+              THE BACKBONE OF OUR SUCCESS IS OUR DEDICATED TEAM
+          </h1>
+          <p class="mt-2 md:mt-4 text-xs md:text-base lg:text-lg text-neutral-400">
+              Our dedicated office team ensures efficiency, innovation, and collaboration, driving TCB Global mission and success.
+          </p>
+      </div>
+    </section>
+
+    <!-- business energy section -->
+
+    <div class="container mx-auto px-3 lg:px-16 my-8">
+      <div class=" border-2 border-gray-800 rounded-2xl overflow-hidden">
+          <div class="flex flex-col sm:flex-row ">
+            <!-- Image -->
+            <div class=" ">
+              <img src="./images/smiling-worker.jpg"  class="w-full sm:w-[347px]   object-cover">
+            </div>
+              
+              <!-- Text Content -->
+              <div class=" p-4 md:p-6 flex items-center">
+                  <div>
+                    <h2 class="font-ethnocentric text-base  lg:text-3xl text-lime-400 uppercase">
+                      TCB Global - Taking Care of Business in Energy
+                    </h2>
+                    <p class="mt-3 md:mt-1 xl:mt-4 text-neutral-500 text-sm lg:text-base xl:text-xl">
+                      TCB Global is shaking up the energy industry with high-performance fuels and innovative solutions.
+                    </p>
+                    <p class="text-sm md:text-base xl:text-xl mt-3 sm:mt-1 md:mt-2 xl:mt-3 ">
+                      <span class="text-white font-bold">🔥 For Performance</span>
+                       <span class="text-neutral-400"> 
+                        - Our premium fuels keep engines running at peak power.
+                       </span>
+                    </p>
+
+                    <p class="text-sm md:text-base xl:text-xl mt-3 sm:mt-1 md:mt-2 xl:mt-3">
+                      <span class="text-white font-bold"> 🏎  With Innovation</span>
+                       <span class="text-neutral-400"> 
+                         - We refine the future with cutting-edge technology.
+                       </span>
+                    </p>
+
+                    <p class="text-sm md:text-base xl:text-xl mt-3 sm:mt-1 md:mt-2 xl:mt-3">
+                      <span class="text-white font-bold"> 👑  Energy Solutions</span>
+                       <span class="text-neutral-400"> 
+                          - Leading the industry with efficiency and reliability.
+                       </span>
+                    </p>
+                  </div>
+  
+              </div> 
+              
+          </div>
+      </div>
+    </div>
+
+    <!-- Partner with TCB  -->
+    <div class="container mx-auto px-3 lg:px-16 mb-4 md:mb-8">
+      <div class=" border-2 border-gray-800 rounded-2xl overflow-hidden">
+          <div class="flex flex-col md:flex-row items-center">
+              
+              <!-- Text Content -->
+              <div class="w-full md:w-1/2 p-4 md:p-10">
+                  <h2 class="font-ethnocentric md:text-2xl  text-lime-400 uppercase">
+                    Partner with TCB Global for innovative fuel and energy solutions today!
+                  </h2>
+                  <p class="mt-4 text-neutral-500 text-sm md:text-base leading-relaxed">
+                    At TCB Global, we are dedicated to providing top-tier fuel and energy solutions. 
+                    Our commitment to excellence drives us to forge strong partnerships across the globe.
+                  </p>
+                  <div class="flex  flex-col md:flex-row gap-5 mt-3 md:mt-5">
+                    <div>
+                      <h3 class=" text-white lg:text-xl font-semibold">Get Involved</h3>
+                      <p class="text-neutral-400">Contact us today to explore partnership opportunities and innovative solutions.</p>
+                    </div>
+                    <div>
+                      <h3 class="text-white lg:text-xl font-semibold">Join Us</h3>
+                      <p class="text-neutral-400">Together, we can drive the future of energy and sustainability.</p>
+                    </div>
+                  </div>
+              </div>
+  
+              <!-- Image -->
+              <div class="w-full md:w-1/2">
+                  <img src="./images/handshake.jpg" alt="Oil Tanker" class="w-full h-full object-cover">
+              </div>
+              
+          </div>
+      </div>
+    </div>
+
+    <!-- Yearly Milestone -->
+    <section class="container mx-auto px-3 lg:px-16 mt-2 lg:mt-8">
+      <div class="text-center mb-8">
+          <h3 class="text-lime-500 font-semibold mb-3">Global Reach</h3>
+          <h2 class="font-ethnocentric text-xl md:text-3xl lg:text-4xl text-white">Explore Our Worldwide Operations and Impact</h2>
+          <p class="text-gray-400 text-sm md:text-base mt-2">
+            Discover how TCB Global operates across various regions. Our
+            commitment to excellence drives our global presence.
+          </p>
+      </div>
+      <div class="relative">
+        <div class="absolute top-0 left-0 md:left-1/2 md:transform md:-translate-x-1/2 h-full flex flex-col items-center">
+          <div class="w-1 h-6 bg-lime-500 "></div>
+          <div class="w-4 h-4 rounded-full bg-lime-500 my-2"></div>
+          <div class="w-1 h-[293px] md:h-[200px] lg:h-[190px] xl:h-[275px] bg-lime-500 "></div>
+          <div class="w-4 h-4 rounded-full bg-lime-500 my-2"></div>
+          <div class="w-1 h-[293px] md:h-[200px] lg:h-[190px] xl:h-[275px] bg-lime-500 "></div>
+          <div class="w-4 h-4 rounded-full bg-lime-500 my-2"></div>
+          <div class="w-1 h-[293px] md:h-[200px] lg:h-[190px] xl:h-[275px] bg-lime-500 "></div>
+          <div class="w-4 h-4 rounded-full bg-lime-500 my-2"></div>
+          <div class="w-1 h-[293px] md:h-[200px] lg:h-[190px] xl:h-[275px] bg-lime-500 "></div>
+          
+        </div>
+        <div>
+           <!-- Yearly Milestone 2023 -->
+          <div class="grid grid-cols-1 md:grid-cols-2 ml-8 md:ml-0 md:gap-20 lg:gap-24 mb-4">
+            <div class="rounded-xl overflow-hidden order-2 md:order-1 border border-white">
+              <img src="./images/green-hill.jpg" alt="" class="w-full h-full object-cover bg-center">
+            </div>
+            <div class="mb-4 md:mb-0 order-1 md:order-2">
+              <h3 class="text-lime-500 font-ethnocentric text-xl md:text-2xl lg:text-3xl mt-4">2023</h3>
+              <h4 class="text-white font-semibold text-base md:text-xl mt-2 lg:mt-4">Global Expansion</h4>
+              <p class="text-neutral-400 font-semibold text-sm md:text-lg mt-2 lg:mt-4">
+                In 2023, TCB Global expanded its operations into new territories. This strategic 
+                move enhances our ability to meet global energy demands.
+              </p>
+            </div>
+          </div>
+           <!-- Yearly Milestone 2022 -->
+          <div class="grid grid-cols-1 md:grid-cols-2 ml-8 md:ml-0 md:gap-20 lg:gap-24 mb-4">
+            <div class="mb-4 md:mb-0  md:text-right">
+              <h3 class="text-lime-500 font-ethnocentric text-xl md:text-2xl lg:text-3xl mt-0 md:mt-4">2022</h3>
+              <h4 class="text-white font-semibold text-base md:text-xl mt-2 lg:mt-4">Sustainability Efforts</h4>
+              <p class="text-neutral-400 font-semibold text-sm md:text-lg mt-2 lg:mt-4">
+                In 2022, we launched several sustainability initiatives aimed at reducing our carbon footprint.
+                 These efforts underscore our commitment to a greener future.
+              </p>
+            </div>
+            <div class="rounded-xl overflow-hidden border border-white">
+              <img src="./images/constraction-work.jpg" alt="" class="w-full h-full object-cover bg-center">
+            </div>
+          </div>
+
+          <!-- Yearly Milestone 2021 -->
+          <div class="grid grid-cols-1 md:grid-cols-2 ml-8 md:ml-0 md:gap-20 lg:gap-24 mb-4">
+            <div class="rounded-xl overflow-hidden order-2 md:order-1 border border-white">
+              <img src="./images/chart.jpg" alt="" class="w-full h-full object-cover bg-center">
+            </div>
+            <div class="mb-4 md:mb-0 order-1 md:order-2">
+              <h3 class="text-lime-500 font-ethnocentric text-xl md:text-2xl lg:text-3xl mt-0 md:mt-4">2021</h3>
+              <h4 class="text-white font-semibold text-base md:text-xl mt-2 lg:mt-4">New Partnerships</h4>
+              <p class="text-neutral-400 font-semibold text-sm md:text-lg mt-2 lg:mt-4">
+                In 2021, TCB Global established key partnerships to enhance our service offerings.
+                 These collaborations have strengthened our market position.
+              </p>
+            </div>
+          </div>
+
+          <!-- Yearly Milestone 2020 -->
+          <div class="grid grid-cols-1 md:grid-cols-2 ml-8 md:ml-0 md:gap-20 lg:gap-24 ">
+            <div class="mb-4 md:mb-0  md:text-right">
+              <h3 class="text-lime-500 font-ethnocentric text-xl md:text-2xl lg:text-3xl mt-0 md:mt-4">2020</h3>
+              <h4 class="text-white font-semibold text-base md:text-xl mt-2 lg:mt-4">Innovative Solutions</h4>
+              <p class="text-neutral-400 font-semibold text-sm md:text-lg mt-2 lg:mt-4">
+                In 2020, we introduced innovative solutions to enhance fuel efficiency.
+                 Our focus on technology continues to drive industry advancements.
+              </p>
+            </div>
+            <div class="rounded-xl overflow-hidden border border-white">
+              <img src="./images/computer-technetian.jpg" alt="" class="w-full h-full object-cover bg-center">
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- tcb aviability -->
+    <div class="container mx-auto px-3 md:px-16 my-6 md:my-12 ">
+      <p class="text-white font-semibold">Innovative</p>
+      <div class="grid gird-cols-1 md:grid-cols-2 gap-2 md:gap-4 ">
+        <div class="">
+          <h3 class="font-ethnocentric text-base lg:text-3xl text-lime-500">Extensive Worldwide Pipeline Network Availability</h3>
+        </div>
+        <div class="">
+          <p class="font-semibold text-sm lg:text-base text-neutral-400">
+            At TCB Global, we are committed to delivering high-quality fuel and energy solutions that meet the evolving needs of our customers. Our expertise spans oil and gas exploration, refining, and transportation, ensuring reliable access to energy 
+            resources worldwide. We prioritize sustainability and innovation in every aspect of our operations.
+          </p>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-3 lg:gap-6 my-4 md:my-6">
+        <div class="">
+          <h3 class="text-white  lg:text-2xl font-semibold mb-3">
+            Comprehensive Oil & Gas Exploration and Refining
+          </h3>
+          <p class="text-neutral-400 font-semibold">
+            We explore and produce oil and natural gas globally.
+          </p>
+        </div>
+        <div class="">
+          <h3 class="text-white  lg:text-2xl font-semibold mb-3">
+            Extensive U.K. Underground Pipeline Network
+          </h3>
+          <p class="text-neutral-400 font-semibold">
+            Our pipeline network ensures efficient fuel distribution.
+          </p>
+        </div>
+        <div class="">
+          <h3 class="text-white  lg:text-2xl font-semibold mb-3">
+            Commitment to Sustainability & Innovation
+          </h3>
+          <p class="text-neutral-400 font-semibold">
+            We implement initiatives that promote environmental responsibility.
+          </p>
+        </div>
+      </div>
+
+      <div class="flex gap-4">
+        <a href="tel:+0018882938990" class="bg-lime-500 hover:bg-lime-500 text-black font-semibold px-4 py-1 md:px-6 md:py-2 rounded-lg text-sm sm:text-base">
+          Call now
+      </a>
+      <a href="mailto:info@tcb.global" class="bg-blue-800 text-white px-4 py-1 md:px-6 md:py-2 rounded-lg text-sm md:text-base hover:bg-blue-700 border border-white">
+        Inquire</a>
+      </div>
+    </div>
+
+    <!-- Footer section -->
+    <footer class= " container mx-auto px-3 md:px-16 bg-gray-900 text-gray-300 py-10 ">
+        <div class=" mx-auto grid grid-cols-1 md:grid-cols-2 gap-2 pt-4 border-t border-gray-700">
+          <div class="max-w-md">
+            <div class="flex items-center gap-2 mb-4">
+              <img src="./images/logo-white.png" alt="TCB Global Logo" class="w-10" />
+              <span class="text-white text-sm font-ethnocentric">GLOBAL</span>
+            </div>
+            <p class="text-sm lg:text-base leading-relaxed">
+              At TCB Global, we specialize in innovative fuel and energy solutions that drive progress.
+              Our commitment to sustainability and efficiency sets us apart in the oil production and transportation industry.
+            </p>
+          </div>
+          <!-- footer menu and social media -->
+          <div class="grid grid-cols-2 mt-6 md:mt-0">
+            <div class=" md:mt-0">
+                <h3 class="text-white font-semibold mb-3">Links</h3>
+                <ul class="space-y-2">
+                  <li><a href="./index.html" class="hover:text-white text-gray-400">Home</a></li>
+                  <li><a href="./about.html" class="hover:text-white text-gray-400">About Us</a></li>
+                  <li><a href="./product.html" class="hover:text-white text-gray-400">Product</a></li>
+                  <li><a href="./contact.html" class="hover:text-white text-gray-400">Contact</a></li>
+                </ul>
+              </div>
+      
+              <div class="">
+                <h3 class="text-white font-semibold mb-3">Follow Us</h3>
+                <div class="">
+                  <a href="https://www.linkedin.com/in/barrie-conner-057794231/" class="hover:text-gray-400 flex items-center space-x-2 ">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                      <path fill="currentColor" d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93zM6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37z" />
+                    </svg>
+                    <span>LinkedIn</span>
+                  </a>
+                </div>
+              </div>
+          </div>
+        </div>
+        <!-- copyright area -->
+        <div class="mt-10 border-t border-gray-700 pt-6 flex flex-col md:flex-row justify-between text-sm">
+          <p>&copy; <span id="year"></span> TCB Global. All rights reserved.</p>
+          <div class="flex space-x-4 mt-2 md:mt-0">
+            <a href="#" class="hover:text-gray-400 underline">Privacy Policy</a>
+            <a href="#" class="hover:text-gray-400 underline" >Terms of Sales</a>
+          </div>
+        </div>
+        <script>
+            document.getElementById('year').textContent = new Date().getFullYear();
+        </script>
+      </footer>
+    
+    <script src="./js/index.js"></script> 
+
+</body>
+</html>
