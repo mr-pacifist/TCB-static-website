@@ -14,15 +14,17 @@ document.getElementById("menu-btn").addEventListener("click", function () {
 
 // hero slider
 document.addEventListener("DOMContentLoaded", function () {
-    let slides = document.querySelectorAll("#slider-container img");
+    let slides = document.querySelectorAll("#slider-container div");
     let indicators = document.querySelectorAll("[id^='indicator-']");
     let bars = document.querySelectorAll("[id^='bar-']");
     let index = 0;
 
     function showSlide() {
-        slides.forEach(slide => slide.classList.remove("active"));
-        indicators.forEach(indicator => indicator.classList.replace("text-lime-500", "text-gray-300"));
-        bars.forEach(bar => bar.style.width = "0%");
+        slides.forEach((slide, i) => {
+            slide.classList.remove("active");
+            indicators[i].classList.replace("text-lime-500", "text-gray-300");
+            bars[i].style.width = "0%";
+        });
 
         slides[index].classList.add("active");
         indicators[index].classList.replace("text-gray-300", "text-lime-500");
@@ -31,12 +33,11 @@ document.addEventListener("DOMContentLoaded", function () {
         index = (index + 1) % slides.length;
     }
 
-    // Run slider every 4 seconds
-    setInterval(showSlide, 6000);
+    // Initialize first slide immediately
+    showSlide();
 
-    // Initialize the first active indicator
-    indicators[0].classList.replace("text-gray-300", "text-lime-500");
-    bars[0].style.width = "100%";
+    // Run slider every 6 seconds
+    setInterval(showSlide, 10000);
 });
 
 

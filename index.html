@@ -63,12 +63,23 @@
     <section class="relative w-full h-screen overflow-hidden container mx-auto px-3 lg:px-16">   
       <!-- Background Slider -->
       <div class="absolute inset-0 ">
-          <div id="slider-container" class="absolute inset-0 w-full h-full">
-              <img src="./images/home-hereo-1.jpg"class="absolute inset-0 w-full h-full object-cover fade active" data-title="Refinery" />
-              <img src="./images/home-hero-2.jpg" class="absolute inset-0 w-full h-full object-cover fade" data-title="Oil Drilling" />
-              <img src="./images/home-hero-3.jpg" class="absolute inset-0 w-full h-full object-cover fade" data-title="2nd Refinery" />
-              <img src="./images/home-hero-4.jpg" class="absolute inset-0 w-full h-full object-cover fade" data-title="Reserve" />
-          </div>
+        <div id="slider-container" class="absolute inset-0 w-full h-full">
+            <div class="active absolute inset-0 w-full h-full fade">
+                <video autoplay muted loop class="w-full h-full object-cover opacity-50">
+                    <source src="./images/refinery.mp4" type="video/mp4">
+                </video>
+            </div> 
+            <div class="absolute inset-0 w-full h-full fade">
+                <img src="./images/home-hero-2.jpg" class="w-full h-full object-cover" data-title="Oil Drilling" />
+            </div>
+            <div class="absolute inset-0 w-full h-full fade">
+                <img src="./images/home-hero-3.jpg" class="w-full h-full object-cover" data-title="2nd Refinery" />
+            </div>
+            <div class="absolute inset-0 w-full h-full fade">
+                <img src="./images/home-hero-4.jpg" class="w-full h-full object-cover" data-title="Reserve" />
+            </div>
+        </div>
+         
       </div>
 
       <!--Text Content -->
