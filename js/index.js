@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Initialize first slide immediately
     showSlide();
 
-    // Run slider every 6 seconds
+    // Run slider every 10 seconds
     setInterval(showSlide, 10000);
 });
 
